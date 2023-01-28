@@ -2,7 +2,7 @@ import pygame
 class Box:
     def __init__(self, sprite, size, pos=[0,0]):
         self.sprite=sprite
-        rect=pygame.Rect(left_top=pos, width_height=size)
+        rect=pygame.Rect(pos, size)
         self.click_box=rect
         self.pos=pos
         
