@@ -2,7 +2,8 @@ import pygame
 class Box:
     def __init__(self, sprite, size, pos=[0,0]):
         self.sprite=sprite
-        self.click_box=pygame.Rect(left=pos[0], top=pos[1], width=size[0], height=size[1])
+        rect=pygame.Rect(left_top=pos, width_height=size)
+        self.click_box=rect
         self.pos=pos
         
     def move(self, vec):
