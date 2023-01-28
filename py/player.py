@@ -1,4 +1,6 @@
 class Player:
     def __init__(self):
-        pass
+        self.stages=[]
+        self.money=0
+        self.state=0
     
