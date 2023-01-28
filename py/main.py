@@ -13,6 +13,7 @@ def main():
     
     while running:
         pygame.time.Clock().tick(30)
+        screen.fill((135, 206, 235))
         test_box.render(screen)
         ground.render(screen)
         
