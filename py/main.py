@@ -13,15 +13,20 @@ def main():
     
     while running:
         pygame.time.Clock().tick(30)
-        screen.fill((135, 206, 235))
-        test_box.render(screen)
-        ground.render(screen)
-        
-        
-        
+        #input handleing goes here
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running=False
+
+        #game logic goes here
+        
+        
+                
+
+        #render goes here
+        screen.fill((135, 206, 235))
+        test_box.render(screen)
+        ground.render(screen)
         
         pygame.display.update()
         
